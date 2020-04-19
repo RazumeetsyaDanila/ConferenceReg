@@ -1,0 +1,298 @@
+* {box-sizing: border-box}
+/* Задает стили для разделительных полос <hr> */
+hr {
+    border: 1px solid #B1D52C;
+    margin-bottom: 25px;
+}
+
+/* Задает ссылкам синий цвет */
+a {
+    text-decoration: none;
+    color: #59761E;
+}
+
+a:hover{
+    color: #FC7307;
+}
+
+p {
+    margin: 8px;
+}
+/*Убирает отступы страницы и задает цвет фона*/
+body {
+    margin: 0;
+    background-color: #D0E67F;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    background: #D0E67F;
+    border-collapse: collapse;
+    text-align: center;
+}
+th {
+    font-weight: bold;
+    border-bottom: 2px solid #263409;
+    border-right: 30px solid #D0E67F;
+    border-left: 30px solid #D0E67F;
+    color: #263409;
+    padding: 8px 2px;
+}
+td {
+    border-right: 30px solid #D0E67F;
+    border-left: 30px solid #D0E67F;
+    color: #263409;
+    padding: 12px 2px;
+}
+/*tr:hover td {color: #59761E;}*/
+
+.padding_table{
+    padding-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+.table_name{
+    padding-top: 2vh;
+    color: #263409;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.info_table{
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+#report_description_width{
+    max-width: 30vw;
+}
+
+
+.msg{
+    text-align: center;
+    color: #263409
+}
+
+/* Задает стиль для формы */
+.form {
+    color: #263409;
+    padding-left: 32vw;
+    padding-right: 32vw;
+    text-align: center;
+}
+
+/* Выравнивает надпись "У Вас уже есть аккаунт" по центру */
+.ihave {
+    text-align: center;
+}
+
+/* Задает стили для всех input элементов */
+input[type=text], input[type=password] , input[type=email] , select, textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    background: #D7EEA5;
+    border-radius: 4px;
+}
+
+/* Добавляет затемнение при заполнении формы*/
+input[type=text]:focus, input[type=password]:focus , input[type=email]:focus , select:focus, textarea:focus{
+    background-color: #CFE79C;
+    outline: none;
+}
+
+/* Задает стиль для кнопки "Зарегистрироваться */
+.submitbtn {
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #59761E;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.submitbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.submitbtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.submitbtn:hover span {
+    padding-right: 15px;
+}
+
+.submitbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*------------------------------- Панель навигации ----------------------------------*/
+/*Стиль для лейбла сайта на панели навигации*/
+.site_label{
+    position: absolute;
+    padding-left: 43vw;
+    margin-top: 5px;
+    color: #B1D52C;
+    font-size: 20px;
+}
+
+
+/* Закрашивает панель навигации */
+.topnav {
+    height: 51px;
+    background-color: #59761E;
+    overflow: hidden;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+/* Стиль для кнопки с выпадающим меню */
+.dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #DDEEB9;
+    padding: 15px 30px;
+    background-color: inherit;
+    font-family: inherit; /* Для вертикальной ориентации телефона  */
+    margin: 0; /* Для вертикальной ориентации телефона */
+}
+
+/* Цвет при наведении на кнопку с выпадающим меню  */
+.dropdown:hover .dropbtn {
+    background-color: #263409;
+}
+
+/* Выпадающее меню */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DDEEB9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+/* Текст ссылок выпадающего меню */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Затемнение при наведении на пункты выпадающего меню */
+.dropdown-content a:hover {
+    background-color: #C8E58B;
+}
+
+/* Отображение выпадающего меню */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Кнопка назад */
+.backbtn{
+    float: right;
+    overflow: hidden;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #DDEEB9;
+    padding: 15px 30px;
+    background-color: inherit;
+    font-family: inherit; /* Для вертикальной ориентации телефона  */
+    margin: 0; /* Для вертикальной ориентации телефона */
+}
+.backbtn:hover {
+    background-color: #263409;
+}
+/*------------------------------- Форма публикации ----------------------------------*/
+/* Стиль загрузки файла */
+.inputfile{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color: #FC7307;
+}
+
+.inputfile + label {
+    cursor: pointer;
+    font-size: 25px;
+}
+/*------------------------------- Адаптация ----------------------------------*/
+
+@media (max-width: 800px) {
+    .form{
+        padding-left: 17vw;
+        padding-right: 17vw;
+    }
+
+    .site_label{
+        padding-left: 5px;
+    }
+
+    .padding_table{
+        width: 100vw;
+    }
+    .info_table{
+        padding-top: 10vh;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .form{
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+
+    .info_table{
+        display: flex;
+        justify-content: center;
+        padding-top: 15vh;
+    }
+
+    .description_display{
+        display: none;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+}
+
+
